@@ -1,0 +1,62 @@
+@import '../utils/variables';
+
+.block2_container {
+    margin-top: 102px;
+    width: 100%;
+}
+
+.block2-content {
+    display: grid;
+    justify-items: center;
+}
+
+.block2_logos {
+    padding: 0 40px;
+    max-width: 1440px;
+    width: 100%;
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block2_title {
+    padding: 0 50px;
+    color: $grey;
+    max-width: 1440px;
+    width: 100%;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.block2_logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logos {
+    padding: 0 10px;
+    max-width: 230px;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+@media (max-width:700px) {
+    .block2_logos {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .logos {
+        padding:15px;
+    }
+
+    .block2_title {
+        text-align: center;
+    }
+}

@@ -1,0 +1,78 @@
+@import '../utils/variables';
+
+
+.head {
+    display: grid;
+    justify-items: center;
+}
+
+.nav {
+    max-width: 1440px;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.logo {
+    cursor: pointer;
+    transition: transform .3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &:active {
+        transform: scale(1);
+    }
+}
+
+.window {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    color: $white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color .3s ease, background-color .3s ease;
+
+    &:hover {
+        color: $grey;
+    }
+}
+
+.lines {
+    width: 2px;
+    height: 13px;
+    background: $white;
+}
+
+.block_menu {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 15%;
+}
+
+.link {
+    color: $white;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    transition: color .3s ease, transform .3s ease;
+
+    &:hover {
+        color: $grey;
+        transform: translateY(-1px);
+    }
+
+    &:active {
+        color: $white;
+    }
+}
+
