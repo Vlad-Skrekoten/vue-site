@@ -1,0 +1,25 @@
+@import'./variables';
+
+@mixin coming {
+    color: $white;
+    background-color: $black;
+    font-size: 19px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 13.878px 10px 14.078px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: color .3s ease, background-color .3s ease;
+
+    &:hover {
+        color: $darkgrey;
+        background: $white;
+    }
+
+    &:active {
+        color: $black;
+        background: $darkgrey;
+    }
+}

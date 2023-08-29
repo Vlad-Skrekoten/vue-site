@@ -44,6 +44,14 @@
     object-fit: cover;
 }
 
+.logos svg{
+    transition: fill .3s ease;
+
+    &:hover {
+        fill: rebeccapurple;
+    }
+}
+
 @media (max-width:700px) {
     .block2_logos {
         display: grid;

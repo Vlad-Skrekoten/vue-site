@@ -23,7 +23,7 @@
     transition: transform .3s ease;
 
     &:hover {
-        transform: scale(1.05);
+        transform: scale(1.2);
     }
 
     &:active {
@@ -52,11 +52,12 @@
 }
 
 .block_menu {
+    width: 100%;
     margin-top: 25px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, max-content);
     justify-content: center;
-    gap: 15%;
+    gap: 5%;
 }
 
 .link {

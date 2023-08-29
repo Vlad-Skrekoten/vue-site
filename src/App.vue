@@ -7,7 +7,10 @@
   <main class="main">
     <!-- <mainBlock1 /> -->
     <mainBlock2 />
+    <mainBlock3 />
+    <mainBlock4 />
     <!-- <Slider /> -->
+    <mainBlock5 />
   </main>
   <Footer />
 </template>

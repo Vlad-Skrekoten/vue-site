@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="footer_to-top">
-                <div class="arrow_to-top">
+                <div @click="scrollTop()" class="arrow_to-top go-top">
                     <img src="../../public/images/arrow/arrowTop.svg" alt="">
                 </div>
             </div>
@@ -47,9 +47,14 @@
 </template>
 
 <script>
-
+export default {
+    name: "Top",
+    methods: {
+        scrollTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    }
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
