@@ -11,6 +11,7 @@
     <mainBlock4 />
     <!-- <Slider /> -->
     <mainBlock5 />
+    <mainBlock6 />
   </main>
   <Footer />
 </template>

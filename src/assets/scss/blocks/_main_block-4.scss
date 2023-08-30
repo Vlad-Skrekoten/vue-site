@@ -106,6 +106,12 @@ img {
     }
 }
 
+@media (max-width:600px) {
+    .block4_container {
+        margin-top: 10%;
+    }
+}
+
 @media (max-width:500px) {
     .block4_projects {
         margin-top: 5%;

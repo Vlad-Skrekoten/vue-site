@@ -1,2 +1,118 @@
 @import '../utils/variables';
 
+.block6_container {
+    padding: 0 20px;
+    color: $white;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+}
+
+.block6 {
+    max-width: 1440px;
+    width: 100%;
+}
+
+.block6_title {
+    margin-top: 52px;
+    max-width: 666px;
+    width: 100%;
+    color: $white;
+    font-size: calc(30px + 84 * (100vw / 1440));
+    font-weight: 500;
+    line-height: 118px;
+}
+
+.block6_content {
+    margin-top: 103px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.block6_text-image {
+    max-width: 400px;
+    padding: 0 20px;
+}
+
+.block_image {
+    max-width: 100%;
+}
+
+.block6_text-boldl {
+    color: $white;
+    font-size: calc(16px + 20 * (100vw / 1440));
+    font-weight: 400;
+    line-height: 54px;
+}
+
+.block6_text-lightl {
+    margin-top: 30px;
+    color: $grey;
+    font-size: calc(15px + 20 * (100vw / 1440));
+    font-weight: 400;
+    line-height: 54px;
+}
+
+.block6_text-boldr {
+    color: $white;
+    font-size: calc(16px + 10 * (100vw / 1440));
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.block6_mixtext {
+    margin-top: 43px;
+}
+
+.block6_text-lightr {
+    color: $grey;
+    font-size: calc(16px + 10 * (100vw / 1440));
+    font-weight: 400;
+    line-height: 32px;
+}
+
+@media (min-width:1440px) {
+
+    .block6_text-lightr,
+    .block6_text-boldr {
+        font-size: 26px;
+    }
+
+    .block6_text-lightl {
+        font-size: 35px;
+    }
+
+    .block6_text-boldl {
+        font-size: 36px;
+    }
+
+    .block6_title {
+        font-size: 114px;
+    }
+}
+
+@media (max-width:800px) {
+
+    .block6_container {
+        text-align: center;
+    }
+
+    .block6_title {
+        line-height: normal;
+    }
+
+    .block6_content {
+        margin-top: 10%;
+        grid-template-columns: auto;
+        gap: 20px;
+    }
+
+    .block6_text-lightl {
+        margin-top: 2%;
+    }
+
+    .block6_mixtext {
+        margin-top: 7%;
+    }
+}
