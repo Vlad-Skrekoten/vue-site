@@ -11,6 +11,7 @@ import mainBlock4 from './components/mainBlock4.vue'
 import Slider from './components/Slider.vue'
 import mainBlock5 from './components/mainBlock5.vue'
 import mainBlock6 from './components/mainBlock6.vue'
+import mainBlock7 from './components/mainBlock7.vue'
 
 
 const app = createApp(App);
@@ -21,6 +22,7 @@ app.component('mainBlock3', mainBlock3);
 app.component('mainBlock4', mainBlock4);
 app.component('mainBlock5', mainBlock5);
 app.component('mainBlock6', mainBlock6);
+app.component('mainBlock7', mainBlock7);
 app.component('Slider', Slider);
 app.component('Footer', Footer);
 app.mount('#app');
