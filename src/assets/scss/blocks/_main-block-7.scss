@@ -1,6 +1,8 @@
 @import '../utils/variables';
 
 .block7_container {
+    margin-top: 345px;
+    margin-bottom: 300px;
     color: $white;
     width: 100%;
     display: grid;
@@ -10,12 +12,15 @@
 .block7_content {
     max-width: 1440px;
     width: 100%;
-
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 20px;
+    justify-content: center;
 }
 
 .block7_title {
     color: $white;
-    font-size: 115px;
+    font-size: calc(30px + 95 * (100vw/1440));
     font-style: normal;
     font-weight: 500;
     line-height: 144px;
@@ -23,11 +28,12 @@
 
 .block7_text {
     color: $grey;
-    font-size: 26px;
+    font-size: calc(16px + 10 * (100vw / 1440));
     font-style: normal;
     font-weight: 400;
     line-height: 36px;
     max-width: 620px;
+    width: 100%;
 }
 
 .block7_content-link {
@@ -35,11 +41,74 @@
     grid-template-columns: repeat(2, max-content);
     align-items: center;
     gap: 20px;
+    transition: transform .3s ease;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateX(20px);
+    }
 }
 
 .block7_link-text {
     color: $white;
-    font-size: 26px;
+    font-size: calc(20px + 6 * (100vw / 1440));
     font-weight: 400;
     line-height: 39px;
+}
+
+.block7_image-left,
+.block7_image-right,
+.block7_image-bottom {
+    max-width: 100%;
+}
+
+.block7_image-left {
+    margin-right: 90px;
+}
+
+.block7_image-right {
+    transform: translateY(200px);
+}
+
+.block7_image-bottom {
+    margin-top: 100px;
+}
+
+@media(max-width:1300px) {
+    .block7_image-right {
+        display: none;
+    }
+
+    .block7_image-left {
+        display: none;
+    }
+
+    .block7_image-bottom {
+        display: none;
+    }
+
+    .block7_content {
+        display: flex;
+        padding: 20px;
+    }
+}
+
+@media (max-width:600px) {
+
+    .block7_container {
+        margin-bottom:5%;
+        margin-top:10%;
+    }
+
+    .block7_title {
+        text-align:center;
+    }
+
+    .block7_content-link {
+        justify-content: center;
+    }
+
+    .block7_content-link {
+        margin-top:20px;
+    }
 }

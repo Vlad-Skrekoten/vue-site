@@ -6,15 +6,15 @@
   <Header />
   <main class="main">
     <!-- <mainBlock1 /> -->
-    <!-- <mainBlock2 />
+    <mainBlock2 />
     <mainBlock3 />
-    <mainBlock4 /> -->
+    <mainBlock4 />
     <!-- <Slider /> -->
-    <!-- <mainBlock5 />
-    <mainBlock6 /> -->
+    <mainBlock5 />
+    <mainBlock6 />
     <mainBlock7 />
   </main>
-  <!-- <Footer /> -->
+  <Footer />
 </template>
 
 <style scoped lang="scss">
