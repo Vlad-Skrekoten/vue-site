@@ -39,7 +39,7 @@
             </div>
             <div class="footer_to-top">
                 <div @click="scrollTop()" class="arrow_to-top go-top">
-                    <img src="../../public/images/arrow/arrowTop.svg" alt="">
+                    <img src="../../public/images/arrow/arrowTop.svg" alt="arrow">
                 </div>
             </div>
         </div>

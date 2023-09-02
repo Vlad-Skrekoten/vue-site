@@ -5,7 +5,7 @@
 <template>
   <Header />
   <main class="main">
-    <!-- <mainBlock1 /> -->
+    <mainBlock1 />
     <mainBlock2 />
     <mainBlock3 />
     <mainBlock4 />

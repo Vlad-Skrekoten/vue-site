@@ -1,10 +1,32 @@
 <template>
     <div class="main_block-1">
-        <div class="title_block-1">Design studio for the web3 world</div>
-        <div class="image_block-1">Hello</div>
+        <div class="block1_content">
+            <div class="title_block-1">
+                <div class="block1-title_first">Design studio</div>
+                <div class="block1-title_second">for the</div>
+                <div class="block1-title_third">web3 world</div>
+            </div>
+
+            <div class="block1_image"><img src="../../public/images/block1/phone.svg" alt="phone"></div>
+        </div>
+        <div class="block1_link">
+            <div @click="scrollBottom()" class="block1_arrow">
+                <img src="../../public/images/arrow/arrowBottom.svg" alt="arrow">
+            </div>
+            <div class="block1_text">
+                We help companies design their products to be ready for web3 world
+            </div>
+        </div>
     </div>
 </template>
 
-<style>
-
-</style>
+<script>
+export default {
+    name: "Bottom",
+    methods: {
+        scrollBottom() {
+            window.scrollTo({ bottom: 0 });
+        }
+    }
+};
+</script>

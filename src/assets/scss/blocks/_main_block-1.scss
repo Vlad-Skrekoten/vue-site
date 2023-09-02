@@ -1,12 +1,17 @@
 @import '../utils/variables';
 
+.block1_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .main_block-1 {
     margin-top: 62px;
     padding: 0 20px;
     max-width: 1440px;
     width: 100%;
     text-align: right;
-
 }
 
 .title_block-1 {
@@ -19,6 +24,24 @@
     line-height: 103.68px;
 }
 
-.image_block-1 {
-    color:white;
+.block1_link {
+    color: $grey;
+    text-align: start;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 20px;
+}
+
+.block1_text {
+    max-width: 343px;
+    width: 100%;
+}
+
+.block1_arrow {
+    cursor: pointer;
+    transition: transform .3s ease;
+
+    &:hover {
+        transform: scale(1.2);
+    }
 }
