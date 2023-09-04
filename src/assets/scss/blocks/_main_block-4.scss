@@ -77,6 +77,10 @@ img {
     max-width: 100%;
 }
 
+.parallax {
+    transform: translateY(-50%);
+}
+
 @media (min-width:1440px) {
     .block4_title {
         font-size: 111px;
