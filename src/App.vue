@@ -9,7 +9,7 @@
     <mainBlock2 />
     <mainBlock3 />
     <mainBlock4 />
-    <!-- <Slider /> -->
+    <Slider />
     <mainBlock5 />
     <mainBlock6 />
     <mainBlock7 />

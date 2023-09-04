@@ -22,19 +22,22 @@ export default {
 </script>
 
 <template>
-    <div class="slider">
-        <div class="title_slider">Other objects</div>
-        <div class="block_slider">
-            <swiper slides-per-vie="3" :modules="[EffectFade, Pagination]" effect="fade" :grab-cursor="true" :loop="true"
-                :pagination="true">
-                <swiper-slide><img src="../../public/images/slider/slider1.svg" alt="image"></swiper-slide>
-                <swiper-slide><img src="../../public/images/slider/slider2.svg" alt="image"></swiper-slide>
-                <swiper-slide><img src="../../public/images/slider/slider3.svg" alt="image"></swiper-slide>
-                <swiper-slide><img src="../../public/images/slider/slider1.svg" alt="image"></swiper-slide>
-                <swiper-slide><img src="../../public/images/slider/slider2.svg" alt="image"></swiper-slide>
-                <swiper-slide><img src="../../public/images/slider/slider3.svg" alt="image"></swiper-slide>
-                <swiper-slide><img src="../../public/images/slider/slider1.svg" alt="image"></swiper-slide>
-            </swiper>
+    <div class="slider_container">
+        <div class="slider">
+            <div class="title_slider">Other objects</div>
+            <div class="block_slider">
+                <swiper slides-per-vie="3" :modules="[EffectFade, Pagination]" effect="fade" :grab-cursor="true"
+                    :loop="true" :pagination="true">
+                    <swiper-slide><img src="../../public/images/slider/slider1.svg" alt="image"></swiper-slide>
+                    <swiper-slide><img src="../../public/images/slider/slider2.svg" alt="image"></swiper-slide>
+                    <swiper-slide><img src="../../public/images/slider/slider3.svg" alt="image"></swiper-slide>
+                    <swiper-slide><img src="../../public/images/slider/slider1.svg" alt="image"></swiper-slide>
+                    <swiper-slide><img src="../../public/images/slider/slider2.svg" alt="image"></swiper-slide>
+                    <swiper-slide><img src="../../public/images/slider/slider3.svg" alt="image"></swiper-slide>
+                    <swiper-slide><img src="../../public/images/slider/slider1.svg" alt="image"></swiper-slide>
+                    <swiper-slide><img src="../../public/images/slider/slider2.svg" alt="image"></swiper-slide>
+                </swiper>
+            </div>
         </div>
     </div>
 </template>

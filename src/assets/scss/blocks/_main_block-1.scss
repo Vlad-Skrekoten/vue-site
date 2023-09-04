@@ -1,27 +1,32 @@
 @import '../utils/variables';
 
+
 .block1_content {
     display: flex;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
+    margin: 20px;
+    max-width: 1440px;
+    width: 100%;
 }
 
 .main_block-1 {
     margin-top: 62px;
     padding: 0 20px;
-    max-width: 1440px;
     width: 100%;
     text-align: right;
+    display: grid;
+    justify-content: center;
 }
 
 .title_block-1 {
     max-width: 623px;
     width: 100%;
     color: $white;
-    font-size: 94.8px;
+    font-size: calc(30px + 60*(100vw / 1440));
     font-style: normal;
     font-weight: 500;
-    line-height: 103.68px;
+
 }
 
 .block1_link {
@@ -43,5 +48,41 @@
 
     &:hover {
         transform: scale(1.2);
+    }
+}
+
+
+@media (min-width:1440px) {
+    .title_block-1 {
+        font-size: 90px;
+    }
+}
+
+@media (max-width:960px) {
+
+    .block1_content {
+        text-align: center;
+    }
+
+    .block1_content {
+        display: grid;
+    }
+}
+
+@media (max-width:600px) {
+
+    .block1_link {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:450px) {
+    .block1_image {
+        display: none;
+    }
+
+    .block1_link {
+        margin-top: 50px;
     }
 }

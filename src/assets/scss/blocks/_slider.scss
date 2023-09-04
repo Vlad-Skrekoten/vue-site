@@ -1,5 +1,13 @@
 @import'../utils/variables';
 
+
+.slider_container {
+width: 100%;
+display: grid;
+justify-items: center;
+}
+
+
 .title_slider {
     margin-left: 24px;
     color: $white;
