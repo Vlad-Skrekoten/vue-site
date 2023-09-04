@@ -33,3 +33,8 @@ npm run build
 ```sh
 npm run lint
 ```
+
+## Photo
+
+![зображення](https://github.com/Vlad-Skrekoten/vue-site/assets/88341932/497c9b2c-35a2-470f-a250-a548a9d54c6a)
+
