@@ -14,25 +14,49 @@
                         stroke="white" stroke-width="1.69968" />
                 </svg>
             </div>
-            <ul class="block_menu">
-                <li class="link">Home</li>
-                <li class="link">About</li>
-                <li class="link">Contact</li>
-                <li class="link">Career</li>
-            </ul>
-            <div class="window">Menu
-                <div class="lines"></div>
-                <div class="lines"></div>
-                <div class="lines"></div>
+            <div class="type_link">
+                <transition name="trans">
+                    <ul class="block_menu" v-if="showMenu" key="menu">
+                        <li class="link">Home</li>
+                        <li class="link">About</li>
+                        <li class="link">Contact</li>
+                        <li class="link">Career</li>
+                    </ul>
+                </transition>
+
+                <ul class=" block_menu-laptop">
+                    <li class="link">Home</li>
+                    <li class="link">About</li>
+                    <li class="link">Contact</li>
+                    <li class="link">Career</li>
+                </ul>
             </div>
+            <div class="window">Menu</div>
+            <transition name="fade" mode="out-in">
+                <i class="min-window" v-if="!showMenu" @click="toggleMenu()"><img src="../../public/images/menu/menu.svg"
+                        alt="menu"></i>
+                <i class="min-window" v-else @click="toggleMenu()"><img src="../../public/images/menu/cancel.svg"
+                        alt="cancel"></i>
+            </transition>
         </nav>
     </header>
 </template>
 
-<style scoped lang="scss">
-@media (max-width: 800px) {
-    .link {
-        display: none;
+<script>
+export default {
+    data() {
+        return {
+            showMenu: false
+        };
+    },
+    methods: {
+        toggleMenu() {
+            this.showMenu = !this.showMenu;
+        }
+
+
     }
-}
-</style>
+};
+</script>
+
+<style scoped lang="scss"></style>
