@@ -1,6 +1,3 @@
-<script>
-
-</script>
 
 <template>
   <Header />
@@ -18,9 +15,6 @@
 </template>
 
 <style scoped lang="scss">
-body {
-  z-index: 1;
-}
 
 main {
   width: 100%;

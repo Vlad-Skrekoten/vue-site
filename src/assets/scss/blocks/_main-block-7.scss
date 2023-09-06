@@ -93,15 +93,25 @@
     }
 }
 
+@media(min-width:1440px) {
+    .block7_title {
+        font-size: 125px;
+    }
+
+    .block7_text {
+        font-size: 26px;
+    }
+}
+
 @media (max-width:600px) {
 
     .block7_container {
-        margin-bottom:5%;
-        margin-top:10%;
+        margin-bottom: 5%;
+        margin-top: 10%;
     }
 
     .block7_title {
-        text-align:center;
+        text-align: center;
     }
 
     .block7_content-link {
@@ -109,6 +119,6 @@
     }
 
     .block7_content-link {
-        margin-top:20px;
+        margin-top: 20px;
     }
 }
