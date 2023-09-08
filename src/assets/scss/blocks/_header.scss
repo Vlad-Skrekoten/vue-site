@@ -143,15 +143,17 @@
 
     .trans-enter-active,
     .trans-leave-active {
-        transition: transform .8s ease;
+        transition: transform .5s ease;
     }
 
 
-    .trans-enter {
+    .trans-enter-from,
+    .trans-leave-to {
         transform: translateY(100%);
     }
 
-    .trans-leave-to {
+    .trans-leave-to,
+    .trans-enter-from {
         transform: translateY(-100%);
     }
 
